@@ -5,7 +5,7 @@ Scripts supporting "Which multiband factor should you choose for your resting-st
 A) Shell scripts. These must be run first:
 
 1. `preprocessing_loopSubjects.sh` loops through the subjects and creates a copy of 
-	`preprocessing_singlesubj_3dTproject.sh` for each subject in which the "subjectID" is replaced with the numeric value. It then submits (via qsub) the preprocessing scripts for all subjects. The script performs preprocessing for four pipelines: without / with temporal filtering x without / with spatial smoothing. This takes approximately four hours (assuming the number of nodes=number of subjects).
+	`preprocessing_singlesubj_3dTproject.sh` for each subject in which the "subjectID" is replaced with the numeric value. It then submits (via qsub) the preprocessing scripts for all subjects. The script performs preprocessing for four pipelines: without / with temporal filtering x without / with spatial smoothing. The main preprocessing script utlizes elements of the Functional Connectomes 1000 project scripts (https://www.nitrc.org/projects/fcon_1000/) but with a number of updates including topup distortion correction, fnirt, and simultaneous filtering and nuisance regression with AFNI 3dTproject. This takes approximately four hours (assuming the number of nodes=number of subjects).
 
 5. `Voxel2nodesystem_loopSubjects.sh` calculates the average time course for each power ROI. Loops across subjects. 
 
