@@ -2,6 +2,8 @@
 
 Scripts supporting "Which multiband factor should you choose for your resting-state fMRI study?"
 
+Data are available at https://openneuro.org/datasets/ds003540. Note scripts include here need to be adapted for the files on OpenNeuro, which were renamed using the BIDS standard. 
+
 A) Shell scripts. These must be run first:
 
 1. `preprocessing_loopSubjects.sh` loops through the subjects and creates a copy of 
