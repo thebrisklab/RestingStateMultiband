@@ -2,7 +2,11 @@
 
 Scripts supporting "Which multiband factor should you choose for your resting-state fMRI study?"
 
+Manuscript, Web Supplement, and the table of gfactors are included here (see /ManuscriptSupplementGit/). Manuscript also available from NeuroImage: https://doi.org/10.1016/j.neuroimage.2021.117965 
+
 Data are available at https://openneuro.org/datasets/ds003540. Note scripts include here need to be adapted for the files on OpenNeuro, which were renamed using the BIDS standard. 
+
+
 
 A) Shell scripts. These must be run first:
 
